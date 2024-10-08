@@ -6,14 +6,11 @@ This repository contains SQL scripts designed to analyze and clean retail sales 
 - [Overview](#overview)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Example Query: Top Sales Month by Year](#example-query-top-sales-month-by-year)
 - [Data Cleaning](#data-cleaning)
 - [Data Exploration](#data-exploration)
 - [Analysis Queries](#analysis-queries)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 The SQL script interacts with a table named `sql - retail sales analysis_utf`, which resides in the `retailsalesanalysis` schema. The primary purpose of this script is to clean and analyze retail sales data, focusing on metrics such as transaction ID, sales date, time, quantity, and total sales.
@@ -27,15 +24,6 @@ The SQL script interacts with a table named `sql - retail sales analysis_utf`, w
 ## Prerequisites
 - A SQL-compatible database like MySQL 8.0+ (due to the use of window functions like `RANK()`).
 - SQL client (e.g., MySQL Workbench, DBeaver, or any other SQL editor).
-
-## Installation
-To get started with the project, follow these steps:
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/retail-sales-analysis.git
-    ```
-2. Load the provided SQL script (`Retail_Sales_Analysis.sql`) into your SQL client.
 
 ## Usage
 Ensure you have the relevant retail sales data in the table: `retailsalesanalysis.sql - retail sales analysis_utf`. Run the queries in the provided script to:
@@ -92,15 +80,5 @@ FROM retail_sales_analysis_utf;
 ## Analysis Queries
 You will also find advanced queries that involve sales trends, ranking sales by month, and calculating average monthly sales.
 
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
 
-1. Fork the repository.
-2. Create your feature branch: `git checkout -b feature/my-feature`.
-3. Commit your changes: `git commit -m 'Add my feature'`.
-4. Push to the branch: `git push origin feature/my-feature`.
-5. Open a pull request.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
    
